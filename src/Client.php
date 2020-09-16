@@ -6,7 +6,7 @@
  * Date: 2019/9/22
  * Time: 20:54
  */
-namespace OpenSDK\Suning;
+namespace SuningSDK;
 
 use SuningSDK\Libs\Format;
 use SuningSDK\Libs\Http;
