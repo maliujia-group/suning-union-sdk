@@ -1,13 +1,13 @@
 <?php
 /**
- * 查询券领用情况【申请】
+ * 商品和券二合一接口
  *
- * @link: https://open.suning.com/ospos/apipage/toApiMethodDetailMenu.do?interCode=suning.netalliance.couponinfo.query
+ * @link: https://open.suning.com/ospos/apipage/toApiMethodDetailMenuNew.do?interCode=suning.netalliance.extensionlink.get
  *
- * User: Ken.Zhang <kenphp@yeah.net>
- * Date: 2019/9/22
- * Time: 21:01
+ * Date: 2020/9/16
+ * Time: 17:56
  */
+
 namespace SuningSDK\Requests\Netalliance;
 
 use SuningSDK\Interfaces\Request;
@@ -44,8 +44,11 @@ class ExtensionlinkGetRequest implements Request
 
     private $subUser;       // 子会员编码
 
-    private $apiParams = [];
+    private $pid;           // 工具商ID
 
+    private $sugsUrl;       // 需要做转链的sugs短链
+
+    private $apiParams = [];
 
     public function setProductUrl($val)
     {
@@ -69,6 +72,18 @@ class ExtensionlinkGetRequest implements Request
     {
         $this->subUser = (string)$val;
         $this->apiParams['subUser'] = (string)$val;
+    }
+
+    public function setPid($val)
+    {
+        $this->pid = (string)$val;
+        $this->apiParams['pid'] = $this->pid;
+    }
+
+    public function setSugsUrl($val)
+    {
+        $this->sugsUrl = (string)$val;
+        $this->apiParams['sugsUrl'] = $this->sugsUrl;
     }
 
     /**

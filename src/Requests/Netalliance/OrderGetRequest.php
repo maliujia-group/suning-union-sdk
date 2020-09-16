@@ -4,9 +4,8 @@
  *
  * @link: https://open.suning.com/ospos/apipage/toApiMethodDetailMenu.do?interCode=suning.netalliance.order.get
  *
- * User: Ken.Zhang <kenphp@yeah.net>
- * Date: 2019/9/22
- * Time: 21:01
+ * Date: 2020/9/16
+ * Time: 17:56
  */
 
 namespace SuningSDK\Requests\Netalliance;

@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * 获取吊起链接接口
+ *
+ * @link: https://open.suning.com/ospos/apipage/toApiMethodDetailMenuNew.do?interCode=suning.netalliance.hoistinglink.query
+ *
+ * Date: 2020/9/16
+ * Time: 17:56
+ */
 namespace SuningSDK\Requests\Netalliance;
 
 use SuningSDK\Interfaces\Request;
